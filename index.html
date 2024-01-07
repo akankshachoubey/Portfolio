@@ -8,12 +8,20 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=PT+Sans&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <img class="logo" src="./logo.jpg">
+
     <nav class="navbar">
+      <img class="logo" src="./MAIN_LOGO.png">
       <ul>
         <li class="home"><a href="#home-page">Home</a></li>
         <li class="about"><a href="#about-page">About</a></li>
@@ -25,16 +33,18 @@
   </header>
 
   <section id="home-page">
-    <div class=".profile-details">
+    <div class=".profile-details" style="margin-left: 22px;">
       <p class="hello">Hello i'm</p>
       <h2>Akanksha Kumari</h2>
       <p class="intro">a Passoinate Developer and a Enthusiastic Learner
       </p>
-      <p class="desc">I'm a Computer Science &amp; Engineering student From Kolkata.Eager to contribute to the world of
+      <p class="desc">I'm a Computer Science &amp; Engineering student From Kolkata.Eager to contribute to the world
+        <br> of
         Computer Science
-        throgh hands on experience and continous learning.I'm always up for exciting projects and collaborations.</p>
+        throgh hands on experience and continous learning.I'm always <br>up for exciting projects and collaborations.
+      </p>
       <button class="resume-btn btn">Resume</button>
-      <button class="connect-btn btn"><a href="#footer">Connect</a></button>
+      <a href="#footer"><button class="connect-btn btn">Connect</button></a>
     </div>
     <img class="profile-img" src="./photo.jpg">
   </section>
@@ -57,11 +67,11 @@
       As a student, I'm committed to continuous learning and growth. My coursework has equipped me with a solid
       foundation in computer science principles, and I actively seek opportunities to apply my knowledge through
       hands-on projects and internships.
-      Check out my portfolio to explore some of my proudest projects. Whether it's a sleek e-commerce site, a dynamic
+      <!-- Check out my portfolio to explore some of my proudest projects. Whether it's a sleek e-commerce site, a dynamic
       web app, each project reflects my dedication to creating seamless digital experiences.
       Beyond coding, I'm fueled by a genuine passion for problem-solving and creativity. I believe in the power of
       collaboration, clean code, and user-centric design. My goal is to not just meet but exceed expectations, ensuring
-      that every project I undertake leaves a lasting impression. </p>
+      that every project I undertake leaves a lasting impression. </p> -->
   </section>
 
   <section id="project-page">
@@ -69,85 +79,76 @@
     <div class="project-section">
       <ul>
         <li>
-          <div class="card">
-            <a href="https://akankshachoubey.github.io/recipe-landing-page/"><img src="./recipe-website.jpg"
-                alt="Avatar" style="width:100%"></a>
+          <a href="https://akankshachoubey.github.io/recipe-landing-page/" class="card">
+            <img src="./recipe-website.jpg" alt="Avatar" style="width:100%">
             <div class="overlay">
               <div class="text">Recipe Page</div>
             </div>
-          </div>
+          </a>
         </li>
         <li>
-          <div class="card">
-            <a href="https://akankshachoubey.github.io/weather-forecast/"><img src="./weather-proect.jpg" alt="Avatar"
-                style="width:100%"></a>
+          <a href="https://akankshachoubey.github.io/weather-forecast/" class="card">
+            <img src="./weather-proect.jpg" alt="Avatar" style="width:100%">
             <div class="overlay">
               <div class="text">Weather Forecast</div>
             </div>
-          </div>
+          </a>
         </li>
         <li>
-          <div class="card">
-            <a href="https://akankshachoubey.github.io/to-do/"><img src="./todo-website.jpg" alt="Avatar"
-                style="width:100%"></a>
+          <a href="https://akankshachoubey.github.io/to-do/" class="card">
+            <img src="./todo-website.jpg" alt="Avatar" style="width:100%">
             <div class="overlay">
               <div class="text">To-do page</div>
             </div>
-          </div>
+          </a>
         </li>
         <li>
-          <div class="card">
-            <a href="https://akankshachoubey.github.io/Digital-Clock/"><img src="./digitalClock website.jpg"
-                alt="Avatar" style="width:100%"></a>
+          <a href="https://akankshachoubey.github.io/Digital-Clock/" class="card">
+            <img src="./digitalClock website.jpg" alt="Avatar" style="width:100%">
             <div class="overlay">
               <div class="text">Digital Clock</div>
             </div>
-          </div>
+          </a>
         </li>
         <li>
-          <div class="card">
-            <a href="https://akankshachoubey.github.io/drum-kit/"><img src="./drum-game.jpg" alt="Avatar"
-                style="width:100%"></a>
+          <a href="https://akankshachoubey.github.io/drum-kit/" class="card">
+            <img src="./drum-game.jpg" alt="Avatar" style="width:100%">
             <div class="overlay">
               <div class="text">Drum Kit</div>
             </div>
-          </div>
+          </a>
         </li>
         <li>
-          <div class="card">
-            <a href="https://akankshachoubey.github.io/image-viewer/"><img src="./image-gallery.jpg" alt="Avatar"
-                style="width:100%"></a>
+          <a href="https://akankshachoubey.github.io/image-viewer/" class="card">
+            <img src="./image-gallery.jpg" alt="Avatar" style="width:100%">
             <div class="overlay">
               <div class="text">Image Gallery</div>
             </div>
-          </div>
+          </a>
         </li>
         <li>
-          <div class="card">
-            <a href="https://akankshachoubey.github.io/Tin-dog/"><img src="./tin-dog.jpg" alt="Avatar"
-                style="width:100%"></a>
+          <a href="https://akankshachoubey.github.io/Tin-dog/" class="card">
+            <img src="./tin-dog.jpg" alt="Avatar" style="width:100%">
             <div class="overlay">
               <div class="text">TinDog Page</div>
             </div>
-          </div>
+          </a>
         </li>
         <li>
-          <div class="card">
-            <a href="https://akankshachoubey.github.io/dice/"><img src="./dice-challenge.png" alt="Avatar"
-                style="width:100%"></a>
+          <a href="https://akankshachoubey.github.io/dice/" class="card">
+            <img src="./dice-challenge.png" alt="Avatar" style="width:100%">
             <div class="overlay">
               <div class="text">Dice Challenge</div>
             </div>
-          </div>
+          </a>
         </li>
         <li>
-          <div class="card">
-            <a href="https://akankshachoubey.github.io/simon-game/"><img src="./simon-image.jpg" alt="Avatar"
-                style="width:100%"></a>
+          <a href="https://akankshachoubey.github.io/simon-game/" class="card">
+            <img src="./simon-image.jpg" alt="Avatar" style="width:100%">
             <div class="overlay">
               <div class="text">Simon Game</div>
             </div>
-          </div>
+          </a>
         </li>
       </ul>
     </div>
@@ -184,7 +185,7 @@
 
   <section id="footer">
     <div class="contact-page">
-      <img class="logo" src="./logo.jpg">
+      <img class="logof" src="./MAIN_LOGO.png">
       <hr>
       <ul class="footer-content">
         <li><a
