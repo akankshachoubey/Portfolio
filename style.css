@@ -1,39 +1,42 @@
 body {
-  margin: 0;
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
-  background: linear-gradient(30deg, #c6bdbd, #000);
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #d5dade 0%, #84868a 74%);
   color: #fff;
 }
 
 /* style for the title bar */
 .logo {
-  width: 80px;
+  width: 200px;
 
 }
 
-header {
+
+.navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 40px;
+  margin: 0px 40px;
   padding: 3px;
   color: #fff;
+  row-gap: 50px;
 }
 
 .navbar ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
   max-width: fit-content;
-  background-color: #000;
-  border: 2px solid black;
-  box-shadow: 0 4px 8px #ED004C;
+  background-color: #9a9797;
+  border: 2px solid #9a9797;
+  box-shadow: 0 4px 8px #393235;
   border-radius: 30px;
   padding: 3px 8px;
   margin: 10px;
+  margin-top: 0px;
 }
 
 .navbar ul li {
@@ -42,18 +45,19 @@ header {
   justify-content: center;
   margin: 2px;
   cursor: pointer;
-  color: #fff;
+  color: #000000;
 }
 
 .navbar ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
 }
 
 .navbar ul li a:hover {
   border-radius: 20px;
-  color: #ED004C;
+  color: #f2eff0;
   text-decoration: underline;
+  transition: ease-in-out 0.3s all;
 }
 
 /* style for#home page */
@@ -68,12 +72,13 @@ header {
 }
 
 #home-page img {
-  width: 500px;
-  height: 260px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   border: black 2px;
-  margin-left: 20px;
-  box-shadow: 0 4px 8px #ED004C;
+  /* margin-left: 50px; */
+  margin-right: 75px;
+  box-shadow: 0 4px 8px #786d72;
 }
 
 .profile-details {
@@ -101,8 +106,8 @@ header {
   width: 100px;
   text-align: center;
   border-radius: 30px;
-  border: 2px solid#ED004C;
-  box-shadow: 0 4px 8px #ED004C;
+  border: 2px solid#000000;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   padding: 2px;
   margin: 5px;
   background-color: #000;
@@ -116,16 +121,17 @@ header {
 }
 
 .btn:hover {
-  background-color: #ED004C;
-  border: 2px solid#ED004C;
-  color: #fff;
+  background-color: #ffffff;
+  border: 2px solid#ffffff;
+  color: #000000;
+  transition: ease-in-out 0.5s all;
 }
 
 /* style for about page */
 #about-page {
-  margin: 70px 0;
+  margin: 0 0;
   color: #fff;
-  background-color: #3d3b3b;
+  background-color: #565454;
   padding: 40px;
 }
 
@@ -143,15 +149,19 @@ span {
   font-size: 25px;
 }
 
-#about-page p,
-#about-page h4 {
+#about-page p {
+  font-size: 15px;
   padding: 5px;
   margin-left: 20px;
-  font-size: 15px;
+  line-height: 1.8;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #about-page h4 {
   font-size: 15px;
+  padding: 5px;
+  margin-left: 20px;
 }
 
 /* Style for the # container */
@@ -165,6 +175,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .project-section ul {
@@ -172,6 +183,8 @@ span {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   flex-wrap: wrap;
+  column-gap: 100px;
+
 }
 
 .card img {
@@ -225,9 +238,10 @@ span {
 
 /* Style the hobby-page container */
 #hobby-page {
-  background: linear-gradient(30deg, #c6bdbd, #000);
+  /* background: linear-gradient(30deg, #c6bdbd, #000); */
+  background-color: #565454;
   padding: 40px;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .hobby-section {
@@ -247,6 +261,11 @@ span {
   margin-right: 10px;
 }
 
+.logof {
+  height: 200px;
+  width: 400px;
+}
+
 .cards {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -264,12 +283,15 @@ span {
 }
 
 /* style for footer */
+
+footer{
+  background-image: linear-gradient(315deg, #d5dade 0%, #84868a 74%);
+}
+
 .contact-page {
   text-align: center;
-  margin: 50px 0;
   margin-bottom: 0;
   color: #fff;
-  background-color: #3d3b3b;
   padding: 40px;
 
 }
@@ -336,10 +358,17 @@ span {
   }
 }
 
+
 /* Responsive adjustments for mobile phones */
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
   .navbar ul li {
-    margin: 5px 0;
+    margin: 10px 0;
   }
 
   #home-page img {
@@ -356,6 +385,13 @@ span {
 
   .hobby-section {
     flex-wrap: wrap;
+  }
+
+  .hobby-section ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
   }
 
   #home-page img {
