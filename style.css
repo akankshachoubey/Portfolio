@@ -60,6 +60,11 @@ body {
   transition: ease-in-out 0.3s all;
 }
 
+.navbar a.active {
+  background-color: #f2eff0;
+  text-decoration: underline;
+}
+
 /* style for#home page */
 #home-page {
   color: #fff;
@@ -76,7 +81,6 @@ body {
   height: 350px;
   border-radius: 50%;
   border: black 2px;
-  /* margin-left: 50px; */
   margin-right: 75px;
   box-shadow: 0 4px 8px #786d72;
 }
@@ -164,7 +168,7 @@ span {
   margin-left: 20px;
 }
 
-/* Style for the # container */
+/* style for project page */
 #project-page {
   margin: 0;
   padding: 40px;
@@ -175,7 +179,6 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .project-section ul {
@@ -238,10 +241,8 @@ span {
 
 /* Style the hobby-page container */
 #hobby-page {
-  /* background: linear-gradient(30deg, #c6bdbd, #000); */
   background-color: #565454;
   padding: 40px;
-  /* margin: 20px; */
 }
 
 .hobby-section {
@@ -284,7 +285,7 @@ span {
 
 /* style for footer */
 
-footer{
+footer {
   background-image: linear-gradient(315deg, #d5dade 0%, #84868a 74%);
 }
 
@@ -313,6 +314,16 @@ footer{
 
 /* Responsive adjustments for tablets and small screens */
 @media (max-width: 850px) {
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar ul {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #home-page img {
     width: 100%;
     max-width: 400px;
@@ -359,20 +370,36 @@ footer{
 }
 
 
+
 /* Responsive adjustments for mobile phones */
 @media screen and (max-width: 576px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 0;
+  .logo {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .navbar ul li {
+  .navbar {
+    flex-direction: column;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin: 10px 0;
+
   }
+
+  .navbar ul {
+    gap: 6px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
   #home-page img {
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .project-section ul {
@@ -423,6 +450,10 @@ footer{
     margin: 10px 0;
   }
 
+  .logof {
+    height: 150px;
+    width: 200px;
+  }
 
   .contact-page {
     padding: 20px;
